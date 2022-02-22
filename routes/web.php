@@ -28,16 +28,16 @@ Route::get('/products/{id}', [ProductsController::class, 'show']);
 *   Rotas para registrar produtos e usuários;
 */
 
-Route::post('/users/register',[UserController::class,'register']);
-Route::post('/products/register',[ProductsController::class,'register']);
+Route::post('api/users/register',[UserController::class,'register']);
+Route::post('api/products/register',[ProductsController::class,'register']);
 
 /*
 *   Rotas para atualizar usuário e seus dados;
 */
 
-Route::put('/users/update/{id}',[UserController::class,'update']);
+Route::put('api/users/update/{id}',[UserController::class,'update']);
 
 /*
 *   Rota para deletar 
 */
-Route::delete('users/delete/{id}', [UserController::class,'delete']);
+Route::delete('api/users/delete/{id}', [UserController::class,'delete']);
