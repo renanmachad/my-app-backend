@@ -21,9 +21,9 @@ use App\Http\Controllers\ProductsController;
 *   retorna apenas um usuário/produto por vez.
 */
 
-Route::get('/users/{id}', [UserController::class,'show']);
-Route::get('/products/{id}', [ProductsController::class, 'show']);
-
+Route::get('api/users/{id}', [UserController::class,'show']);
+Route::get('api/products/{id}', [ProductsController::class, 'show']);
+Route::get('/api/users/',[UserController::class,'showAll']);
 /*
 *   Rotas para registrar produtos e usuários;
 */

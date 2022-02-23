@@ -21,6 +21,7 @@ return [
         'http://localhost:4200',
         'http://localhost,4200',
         '127.0.0.1:4200',
+        'http://localhost:4200'
     ))),
 
     /*

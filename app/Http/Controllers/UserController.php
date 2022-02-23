@@ -12,6 +12,14 @@ class UserController extends Controller
     *   Função para mostrar usuário e produto relacionado;
     *   Método try/catch aplicado para melhor debug e não quebrar servidor;
     */
+    public function showAll(User $user){
+        try{
+            return response()->json($user->all());
+        }catch(\Exception $e){
+            return response()->json($e,400);
+        }
+    }
+
     public function show($id)
     {
         
