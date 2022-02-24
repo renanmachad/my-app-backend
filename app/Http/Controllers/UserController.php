@@ -14,7 +14,10 @@ class UserController extends Controller
     */
     public function showAll(User $user){
         try{
-            return response()->json($user->all());
+            $users = $user->all();
+            
+            //$products= $products->user()->all();
+            return response()->json($users);
         }catch(\Exception $e){
             return response()->json($e,400);
         }
