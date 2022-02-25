@@ -32,7 +32,7 @@ class UserController extends Controller
             $products = $user->products()->get();
 
             //retorno em JSON por ser uma API
-            return response()->json(['user'=> $user,'produtos'=> $products],200);
+            return response()->json($products,200);
         }catch(\Exception $e){
             //retorno de erros em JSON também;
             return response()->json($e,400);
@@ -55,16 +55,10 @@ class UserController extends Controller
     public function update(Request $request,$id)
     {
         try{
-            $user = User::find($id);
-            
-            if(!$user){
-                return response()->json([
-                    'error'=>'Usuário não encontrado'
-                ], 404);
-            }
+            $user = User::findOrFail($id);
 
-            $user->fill($request->all());
-            $user->save();
+            $user->update($request->all());
+            
 
             return response()->json(['response'=>'Usuário atualizado com sucesso'],200);
 
