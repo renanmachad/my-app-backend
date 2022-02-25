@@ -11,6 +11,8 @@
 
 This project is was made using Laravel framework in RESTAPI format, using the MYSQL like database. 
 To running the project
+## Why .env is here?
+To avoid problems I left the .env file in the project
 
 - Clone repository
 - Run `php composer install`
