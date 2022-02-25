@@ -20,7 +20,7 @@ To avoid problems I left the .env file in the project
 ## To run this project
 - Clone repository
 - Run `composer install`, to install dependencies;
-- Run `php artisan migrate`;
+- Run `php artisan migrate`, i use the migrations to make tables in the batabase,not SQL;
 - Run `php artisan serve`;
 
 
