@@ -10,14 +10,17 @@
 ## The project
 
 This project is was made using Laravel framework in RESTAPI format, using the MYSQL like database. 
-To running the project
+To running the project.
+
+## Database
+Set in .env the name of the database for this project, the default value for it is is "nova". You need create a database in your mysql with the same name
 ## Why .env is here?
 To avoid problems I left the .env file in the project
 
 - Clone repository
-- Run `php composer install`
-- Run `php artisan migrate`
-- Run `php artisan serve`
+- Run `composer install`, to install dependencies;
+- Run `php artisan migrate`;
+- Run `php artisan serve`;
 
 
 
