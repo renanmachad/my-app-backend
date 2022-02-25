@@ -17,6 +17,7 @@ Set in .env the name of the database for this project, the default value for it 
 ## Why .env is here?
 To avoid problems I left the .env file in the project
 
+## To run this project
 - Clone repository
 - Run `composer install`, to install dependencies;
 - Run `php artisan migrate`;
